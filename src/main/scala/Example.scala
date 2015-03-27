@@ -1,12 +1,8 @@
-package example
+package zoo
 
 import org.apache.spark.sql.{SQLContext, DataFrame}
 
-/**
- * Created by jianshuang on 3/11/15.
- */
 object Example {
-
   case class RandomRow(id: String, timestamp: java.sql.Timestamp, value: Double, tag: Int, comment: String) {
     def this(id: String) = {
       this(

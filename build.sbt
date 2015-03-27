@@ -61,10 +61,10 @@ val sparkDependencyScope = "provided"
 
 // spark modules (should be included by spark-sql, just an example)
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core" % sparkVersion % sparkDependencyScope,
-  "org.apache.spark" %% "spark-sql" % sparkVersion % sparkDependencyScope,
-  "org.apache.spark" %% "spark-mllib" % sparkVersion % sparkDependencyScope,
-  "org.apache.spark" %% "spark-streaming" % sparkVersion % sparkDependencyScope
+  "org.apache.spark" %% "spark-core" % sparkVersion,
+  "org.apache.spark" %% "spark-sql" % sparkVersion,
+  "org.apache.spark" %% "spark-mllib" % sparkVersion,
+  "org.apache.spark" %% "spark-streaming" % sparkVersion
 )
 
 // logging
